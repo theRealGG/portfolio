@@ -1,0 +1,9 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "Über mich",
+    "service": "Service",
+    "faq": "Fragen",
+    "contact": "Kontakt"
+  }
+}
