@@ -1,0 +1,19 @@
+@tailwind utilities;
+
+@layer utilities {
+  .primary-color {
+    @apply text-primary-color dark:text-primary-color-dark;
+  }
+
+  .secondary-color {
+    @apply text-text-color-alt dark:text-text-color-alt;
+  }
+
+  .container-color {
+    @apply bg-container-color dark:bg-container-color-dark;
+  }
+
+  .rounded-border {
+    @apply rounded-lg border-border-color dark:border-border-color-dark;
+  }
+}

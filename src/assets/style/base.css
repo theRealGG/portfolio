@@ -1,0 +1,46 @@
+@tailwind base;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body,
+  button,
+  input,
+  textarea {
+    @apply font-serif text-normal-font-size laptop:text-normal-font-size-lg;
+  }
+
+  body {
+    @apply bg-body-color dark:bg-body-color-dark text-text-color dark:text-text-color-dark transition-colors duration-themeSwitch;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply text-primary-color dark:text-primary-color font-semibold;
+  }
+
+  h1 {
+    @apply text-h1-font-size laptop:text-h1-font-size-lg;
+  }
+
+  h2 {
+    @apply text-h2-font-size laptop:text-h2-font-size-lg;
+  }
+
+  h3 {
+    @apply text-h3-font-size laptop:text-h3-font-size-lg;
+  }
+
+  img {
+    @apply max-w-full h-auto;
+  }
+}

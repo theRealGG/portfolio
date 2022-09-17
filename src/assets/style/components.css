@@ -1,0 +1,24 @@
+@tailwind components;
+
+@layer components {
+  .nav-container {
+    @apply flex flex-row gap-8 nav-switch:gap-0 nav-switch:flex-col relative nav-switch:fixed nav-switch:backdrop-blur-md nav-switch:top-0  nav-switch:w-[80%] nav-switch:h-full nav-switch:border-l-[2px] nav-switch:border-text-color-alt dark:nav-switch:border-text-color-dark-alt nav-switch:transition-right nav-switch:duration-300;
+  }
+
+  .nav-link {
+    @apply flex nav-switch:text-h2-font-size flex-row gap-2 items-center transition-colors duration-300 hover:font-semibold hover:text-primary-color dark:hover:text-primary-color-dark;
+  }
+
+  .nav-link-active {
+    @apply flex nav-switch:text-h2-font-size flex-row gap-2 items-center font-semibold text-primary-color dark:text-primary-color-dark;
+  }
+
+  /* language picker */
+  .language {
+    @apply cursor-pointer flex flex-col justify-center items-center h-[22px] w-8;
+  }
+
+  .active-language {
+    @apply border-b-2 border-primary-color dark:border-primary-color-dark;
+  }
+}
