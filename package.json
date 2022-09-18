@@ -32,8 +32,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx}' ",
-    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}'"
+    "fix-code": "prettier-eslint --write 'src/**/*.{ts,tsx}' ",
+    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}'",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint --fix 'src/**/*.{ts,tsx}'"
   },
   "eslintConfig": {
     "extends": [
