@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test LanguageSwitcher component renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        class="language"
+        data-testid="german-language"
+        id="de"
+        role="button"
+        tabindex="0"
+      >
+        <img
+          alt="German"
+          class="w-8 h-4 rounded-full"
+          src="germany.png"
+        />
+      </div>
+      <div
+        class="language active-language"
+        data-testid="english-language"
+        id="en"
+        role="button"
+        tabindex="0"
+      >
+        <img
+          alt="English"
+          class="w-8 h-4 rounded-full"
+          src="uk.png"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Test ThemeSwitcher component renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="flex items-center gap-4"
+    >
+      <div
+        class="language"
+        data-testid="german-language"
+        id="de"
+        role="button"
+        tabindex="0"
+      >
+        <img
+          alt="German"
+          class="w-8 h-4 rounded-full"
+          src="germany.png"
+        />
+      </div>
+      <div
+        class="language active-language"
+        data-testid="english-language"
+        id="en"
+        role="button"
+        tabindex="0"
+      >
+        <img
+          alt="English"
+          class="w-8 h-4 rounded-full"
+          src="uk.png"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;
