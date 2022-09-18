@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Loading (splash screen) Component renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="absolute w-[20%] h-[20%] top-[40%] left-[40%] flex justify-center items-center flex-col"
+    >
+      <div
+        class="flex-flex-col animate-pulse"
+      >
+        <div
+          class="text-xl primary-color"
+        >
+          Hisham
+        </div>
+        <div
+          class="text-xl"
+        >
+          Görner
+        </div>
+      </div>
+      <div>
+        loading
+      </div>
+    </div>
+  </div>
+</body>
+`;
