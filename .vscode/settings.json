@@ -1,0 +1,9 @@
+{
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.formatOnSave": true,
+  "prettier.useEditorConfig": false,
+  "prettier.configPath": "${PROJECT_ROOT}/.prettierc.json",
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
+}
