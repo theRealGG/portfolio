@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Header component renders correctly 1`] = `
+<body>
+  <div>
+    <header
+      class="w-full z-fixed bg-body-color dark:bg-body-color-dark fixed top-0 left-0 transition-colors duration-300"
+    >
+      <div
+        class="container mx-auto h-header-height flex justify-between items-center px-8 "
+        data-testid="fixed-container"
+      >
+        <a
+          class="flex flex-col"
+          href="#home"
+        >
+          <span
+            class="block text-text-color-alt dark:text-text-color-dark-alt"
+          >
+            dev by
+          </span>
+          <span
+            class="block font-semibold primary-color"
+          >
+            Hisham
+          </span>
+        </a>
+        <div
+          class="flex justify-end"
+        >
+          <nav
+            class="nav-container nav-switch:-right-full"
+            data-testid="nav-container"
+          >
+            <ul
+              class="flex flex-row justify-center nav-switch:gap-y-[2.5rem]  gap-x-8 nav-switch:flex-col nav-switch:pt-[5rem] nav-switch:pr-0 nav-switch:pb-0 nav-switch:pl-[3rem]"
+              data-testid="nav-menu"
+            >
+              <li>
+                <a
+                  class="nav-link-active"
+                  data-testid="nav-home"
+                  href="#home"
+                  id="nav-home"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"
+                    />
+                  </svg>
+                  <span>
+                    home
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  data-testid="nav-about"
+                  href="#about"
+                  id="nav-about"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2A10.13 10.13 0 0 0 2 12a10 10 0 0 0 4 7.92V20h.1a9.7 9.7 0 0 0 11.8 0h.1v-.08A10 10 0 0 0 22 12 10.13 10.13 0 0 0 12 2zM8.07 18.93A3 3 0 0 1 11 16.57h2a3 3 0 0 1 2.93 2.36 7.75 7.75 0 0 1-7.86 0zm9.54-1.29A5 5 0 0 0 13 14.57h-2a5 5 0 0 0-4.61 3.07A8 8 0 0 1 4 12a8.1 8.1 0 0 1 8-8 8.1 8.1 0 0 1 8 8 8 8 0 0 1-2.39 5.64z"
+                    />
+                    <path
+                      d="M12 6a3.91 3.91 0 0 0-4 4 3.91 3.91 0 0 0 4 4 3.91 3.91 0 0 0 4-4 3.91 3.91 0 0 0-4-4zm0 6a1.91 1.91 0 0 1-2-2 1.91 1.91 0 0 1 2-2 1.91 1.91 0 0 1 2 2 1.91 1.91 0 0 1-2 2z"
+                    />
+                  </svg>
+                  <span>
+                    about
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  data-testid="nav-service"
+                  href="#service"
+                  id="nav-service"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6h-3V4c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2zm-5-2v2H9V4h6zM8 8h12v3H4V8h4zM4 19v-6h6v2h4v-2h6l.001 6H4z"
+                    />
+                  </svg>
+                  <span>
+                    service
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  data-testid="nav-faq"
+                  href="#faq"
+                  id="nav-faq"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 1024 1024"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M764 280.9c-14-30.6-33.9-58.1-59.3-81.6C653.1 151.4 584.6 125 512 125s-141.1 26.4-192.7 74.2c-25.4 23.6-45.3 51-59.3 81.7-14.6 32-22 65.9-22 100.9v27c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-27c0-99.5 88.6-180.4 197.6-180.4s197.6 80.9 197.6 180.4c0 40.8-14.5 79.2-42 111.2-27.2 31.7-65.6 54.4-108.1 64-24.3 5.5-46.2 19.2-61.7 38.8a110.85 110.85 0 0 0-23.9 68.6v31.4c0 6.2 5 11.2 11.2 11.2h54c6.2 0 11.2-5 11.2-11.2v-31.4c0-15.7 10.9-29.5 26-32.9 58.4-13.2 111.4-44.7 149.3-88.7 19.1-22.3 34-47.1 44.3-74 10.7-27.9 16.1-57.2 16.1-87 0-35-7.4-69-22-100.9zM512 787c-30.9 0-56 25.1-56 56s25.1 56 56 56 56-25.1 56-56-25.1-56-56-56z"
+                    />
+                  </svg>
+                  <span>
+                    faq
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  data-testid="nav-contact"
+                  href="#contact"
+                  id="nav-contact"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 2H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h3v3.767L13.277 18H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14h-7.277L9 18.233V16H4V4h16v12z"
+                    />
+                  </svg>
+                  <span>
+                    contact
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <div
+              class="nav-switch:absolute nav-switch:left-12 nav-switch:bottom-4 flex flex-row justify-center gap-4 nav-switch:gap-8"
+            >
+              <div
+                class="flex items-center gap-4"
+              >
+                <div
+                  class="language"
+                  data-testid="german-language"
+                  id="de"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    alt="German"
+                    class="w-8 h-4 rounded-full"
+                    src="germany.png"
+                  />
+                </div>
+                <div
+                  class="language active-language"
+                  data-testid="english-language"
+                  id="en"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    alt="English"
+                    class="w-8 h-4 rounded-full"
+                    src="uk.png"
+                  />
+                </div>
+              </div>
+              <div
+                class="flex flex-col rounded-full dark:text-primary-color-dark text-text-color justify-center items-center"
+                data-testid="theme-toggler"
+                role="button"
+                tabindex="0"
+              >
+                <svg
+                  fill="currentColor"
+                  height="24px"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759 4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="nav-switch:absolute nav-switch:top-[1rem] nav-switch:right-[1.5rem] cursor-pointer text-[1.25rem] font-semibold hidden nav-switch:block"
+              data-testid="nav-container-close-button"
+              role="button"
+              tabindex="0"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 1024 1024"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+                />
+              </svg>
+            </div>
+          </nav>
+          <div
+            class="cursor-pointer text-[1.25rem] hidden nav-switch:block"
+            data-testid="nav-container-burger-button"
+            role="button"
+            tabindex="0"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+</body>
+`;
