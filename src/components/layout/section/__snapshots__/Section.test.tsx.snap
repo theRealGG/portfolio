@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Section component renders correctly 1`] = `
+<body>
+  <div>
+    <section
+      class="grid pt-header-spacing pb-[1rem] px-0"
+      data-testid="section"
+      id="home"
+    >
+      <div
+        class="container mx-auto grid gap-[1.25rem] "
+        data-testid="fixed-container"
+      />
+    </section>
+  </div>
+</body>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Container component renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="container mx-auto Hello World "
+      data-testid="fixed-container"
+    />
+  </div>
+</body>
+`;
