@@ -21,7 +21,7 @@ exports[`Test Loading (splash screen) Component renders correctly 1`] = `
         </div>
       </div>
       <div>
-        loading
+        Loading
       </div>
     </div>
   </div>
