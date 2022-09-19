@@ -7,13 +7,16 @@ import store from './plugins/redux/store';
 
 import './plugins/i18next/i18n';
 import Loading from './components/utility/loading/Loading';
+import ErrorBoundary from './components/utility/error/ErrorBoundary';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
       <Suspense fallback={<Loading />}>
-        <App />
+        <ErrorBoundary>
+          <App />
+        </ErrorBoundary>
       </Suspense>
     </Provider>
   </React.StrictMode>
