@@ -21,6 +21,8 @@
       "@/*": ["./src/*"],
       "@/style": ["./src/style/*"],
       "@/components/*": ["./src/components/*"],
+      "@/shared/*": ["./src/shared/*"],
+      "@/models/*": ["./src/shared/*"],
       "@/ui/*": ["./src/components/ui/*"],
       "@/hooks/*": ["./src/shared/hooks/*"],
       "@/utility/*": ["./src/shared/utility/*"]
