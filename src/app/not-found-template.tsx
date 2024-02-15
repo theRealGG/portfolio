@@ -1,6 +1,7 @@
 import { Container, Headline, Icons, Text } from '@/components/ui';
 import { Link } from '@/navigation';
 import { Routes } from '@/shared/models';
+import Image from 'next/image';
 
 type NotFoundTemplateProps = {
   title: string;
@@ -19,12 +20,14 @@ export default function NotFoundTemplate({
 }: NotFoundTemplateProps) {
   return (
     <Container className="w-full px-6 pb-16 pt-10 sm:pb-24 lg:px-8">
-      <img
-        className="mx-auto h-10 w-auto sm:h-12"
-        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-        alt="Your Company"
+      <Image
+        src="/no-clue.png"
+        width={128}
+        height={128}
+        alt="Hisham Görner - Ups"
+        className="rounded-full mx-auto shadow-md"
       />
-      <header className="mx-auto mt-20 max-w-2xl text-center sm:mt-24">
+      <header className="mx-auto mt-16 max-w-2xl text-center sm:mt-24">
         <Text intent="text" className="font-semibold leading-8 text-zomp">
           404
         </Text>

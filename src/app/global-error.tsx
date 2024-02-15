@@ -1,3 +1,5 @@
+'use client';
+
 import { Button, Headline, Text } from '@/components/ui';
 
 export default function GlobalError({ reset }: { reset: () => void }) {

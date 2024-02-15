@@ -6,10 +6,9 @@ type ErrorTemplateProps = {
   title: string;
   description: string;
   goHome: string;
-  reset: () => void;
 };
 
-export default function ErrorTemplate({ subtitle, title, description, goHome, reset }: ErrorTemplateProps) {
+export default function ErrorTemplate({ subtitle, title, description, goHome }: ErrorTemplateProps) {
   return (
     <Container className="flex w-full flex-auto flex-col justify-center px-6 py-24 sm:py-64 lg:px-8">
       <Text intent="text" className="font-semibold text-zomp">
@@ -22,7 +21,7 @@ export default function ErrorTemplate({ subtitle, title, description, goHome, re
         {description}
       </Text>
       <div className="mt-10">
-        <Link href="/" onClick={reset} className="inline-flex text-sm font-semibold leading-7 text-zomp">
+        <Link href="/" className="inline-flex text-sm font-semibold leading-7 text-zomp">
           {goHome}
         </Link>
       </div>
