@@ -1,13 +1,13 @@
 import { ComponentPropsWithoutRef, ElementType } from 'react';
 
-import { cva, type VariantProps } from 'class-variance-authority';
 import { mergeClasses } from '@/shared/utility';
+import { cva, type VariantProps } from 'class-variance-authority';
 
 const textVariants = cva('', {
   variants: {
     intent: {
       summary: 'mt-6 text-xl leading-8',
-      text: 'text-base leading-7',
+      text: 'text-base leading-7 sm:leading-8',
       note: 'text-sm leading-6',
     },
     text: {
@@ -35,7 +35,7 @@ export function Text<T extends ElementType = 'p'>({
   const Component: ElementType = as ?? 'p';
   return (
     <Component
-      className={mergeClasses(textVariants({ intent, text }))}
+      className={mergeClasses(textVariants({ intent, text, className }))}
       data-intent={intent}
       data-text={text}
       {...props}

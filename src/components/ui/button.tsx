@@ -1,7 +1,8 @@
-import { ComponentPropsWithoutRef } from 'react';
 import { Link } from '@/navigation';
-import { cva, type VariantProps } from 'class-variance-authority';
 import { mergeClasses } from '@/shared/utility';
+import { Button as HeadlessButton, ButtonProps as HeadlessButtonProps } from '@headlessui/react';
+import { cva, type VariantProps } from 'class-variance-authority';
+import { ComponentPropsWithoutRef, ForwardedRef, PropsWithChildren, forwardRef } from 'react';
 
 const buttonVariants = cva('rounded font-semibold shadow-sm', {
   variants: {
@@ -24,30 +25,46 @@ const buttonVariants = cva('rounded font-semibold shadow-sm', {
   },
 });
 
-type ButtonLinks = VariantProps<typeof buttonVariants> &
-  ((ComponentPropsWithoutRef<'button'> & { href?: undefined }) | ComponentPropsWithoutRef<typeof Link>);
+type ButtonLinks = VariantProps<typeof buttonVariants> & (HeadlessButtonProps | ComponentPropsWithoutRef<typeof Link>);
 
-export function Button({ intent, size, className, children, ...props }: ButtonLinks) {
-  if (typeof props.href !== 'undefined') {
+export function TouchTarget({ children }: { children: React.ReactNode }) {
+  return (
+    <>
+      {children}
+      <span
+        className="absolute left-1/2 top-1/2 size-[max(100%,2.75rem)] -translate-x-1/2 -translate-y-1/2 [@media(pointer:fine)]:hidden"
+        aria-hidden="true"
+      />
+    </>
+  );
+}
+
+export const Button = forwardRef(
+  ({ intent, size, className, children, ...props }: PropsWithChildren<ButtonLinks>, ref: ForwardedRef<HTMLElement>) => {
+    if ('href' in props) {
+      return (
+        <Link
+          className={mergeClasses(buttonVariants({ intent, size, className }))}
+          href={props.href}
+          data-size={size}
+          data-intent={intent}
+          ref={ref as ForwardedRef<HTMLAnchorElement>}
+        >
+          <TouchTarget>{children}</TouchTarget>
+        </Link>
+      );
+    }
     return (
-      <Link
+      <HeadlessButton
         className={mergeClasses(buttonVariants({ intent, size, className }))}
-        href={props.href}
+        ref={ref}
         data-size={size}
         data-intent={intent}
       >
-        {children}
-      </Link>
+        <TouchTarget>{children}</TouchTarget>
+      </HeadlessButton>
     );
-  }
-  return (
-    <Button
-      className={mergeClasses(buttonVariants({ intent, size, className }))}
-      data-size={size}
-      data-intent={intent}
-      href={props.href}
-    >
-      {children}
-    </Button>
-  );
-}
+  },
+);
+
+Button.displayName = 'Button';

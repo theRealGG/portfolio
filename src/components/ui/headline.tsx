@@ -1,7 +1,7 @@
 import { ComponentPropsWithoutRef, ElementType } from 'react';
 
-import { cva, type VariantProps } from 'class-variance-authority';
 import { mergeClasses } from '@/shared/utility';
+import { cva, type VariantProps } from 'class-variance-authority';
 
 const headlineVariants = cva('', {
   variants: {
@@ -9,6 +9,7 @@ const headlineVariants = cva('', {
       primary: 'text-3xl font-semibold tracking-tight sm:text-5xl',
       section: 'text-2xl font-semibold leading-7 sm:text-3xl sm:tracking-tight',
       article: 'text-xl font-semibold sm:text-2xl',
+      card: 'text-sm font-semibold leading-6',
     },
     text: {
       primary: 'text-zomp',
