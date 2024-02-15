@@ -47,5 +47,8 @@
     "description": "Es tut mir leid, die angeforderte Seite wurde nicht gefunden",
     "toHome": "Zurück zur Startseite",
     "pages": "Schau dir meine Seiten an"
+  },
+  "error": {
+    "error": "Error"
   }
 }

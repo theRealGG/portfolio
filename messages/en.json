@@ -47,5 +47,11 @@
     "description": "I'm sorry the requested page could not be found.",
     "toHome": "Go back home",
     "pages": "Visit my pages"
+  },
+  "error": {
+    "subtitle": "Error",
+    "title": "A error occured",
+    "description": "I'm sorry a unexpected error occured. I'm sorry for the inconvience.",
+    "goHome": "Go home"
   }
 }
