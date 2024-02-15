@@ -49,6 +49,9 @@
     "pages": "Schau dir meine Seiten an"
   },
   "error": {
-    "error": "Error"
+    "subtitle": "Fehler",
+    "title": "Es ist ein Fehler aufgetreten",
+    "description": "I'm sorry a unexpected error occured. I'm sorry for the inconvience.",
+    "goHome": "Go home"
   }
 }
