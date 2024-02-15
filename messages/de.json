@@ -1,5 +1,51 @@
 {
   "layout": {
     "title": "Hisham Görner"
+  },
+  "routes": {
+    "home": {
+      "name": "Hauptseite",
+      "description": "Allgemeine Informationen über Hisham Görner"
+    },
+    "about": {
+      "name": "Über mich",
+      "description": "Mehr Informationen über Hisham Görner"
+    },
+    "blog": {
+      "name": "Blog",
+      "description": "Schau dir meine neusten Blogeinträge an"
+    },
+    "faq": {
+      "name": "Faq",
+      "description": "Frequently asket question"
+    },
+    "contact": {
+      "name": "Kontakt",
+      "description": "Trete mit mir in Verbindung"
+    }
+  },
+  "socialLinks": {
+    "linkedin": {
+      "name": "Linkedin",
+      "description": "Mein Linkedin profil"
+    },
+    "twitter": {
+      "name": "Twitter",
+      "description": "Mein X (ehemals Twitter) profil"
+    },
+    "instagram": {
+      "name": "Instagram",
+      "description": "Mein Instagram Profil"
+    },
+    "github": {
+      "name": "Github",
+      "description": "Mein Github profil"
+    }
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Es tut mir leid, die angeforderte Seite wurde nicht gefunden",
+    "toHome": "Zurück zur Startseite",
+    "pages": "Schau dir meine Seiten an"
   }
 }

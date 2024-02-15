@@ -1,5 +1,51 @@
 {
   "layout": {
     "title": "Hisham Görner"
+  },
+  "routes": {
+    "home": {
+      "name": "Home",
+      "description": "General information about Hisham Görner"
+    },
+    "about": {
+      "name": "About",
+      "description": "Detailed information about Hisham Görner"
+    },
+    "blog": {
+      "name": "Blog",
+      "description": "Get my latest article"
+    },
+    "faq": {
+      "name": "Faq",
+      "description": "Frequently asket question"
+    },
+    "contact": {
+      "name": "contact",
+      "description": "Get in contact with me"
+    }
+  },
+  "socialLinks": {
+    "linkedin": {
+      "name": "Linkedin",
+      "description": "My Linkedin profile"
+    },
+    "twitter": {
+      "name": "Twitter",
+      "description": "My X (formerly Twitter) profile"
+    },
+    "instagram": {
+      "name": "Instagram",
+      "description": "My Instagram profile"
+    },
+    "github": {
+      "name": "Github",
+      "description": "My Github profile"
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "I'm sorry the requested page could not be found.",
+    "toHome": "Go back home",
+    "pages": "Visit my pages"
   }
 }
