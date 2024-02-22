@@ -1,6 +1,7 @@
 {
-  "layout": {
-    "title": "Hisham Görner"
+  "metadata": {
+    "title": "{name} - Fullstack Developer",
+    "description": "Portfolio page of Hisham Görner"
   },
   "routes": {
     "home": {

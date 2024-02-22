@@ -1,6 +1,6 @@
 {
-  "layout": {
-    "title": "Hisham Görner"
+  "metadata": {
+    "title": "{name} - Fullstack Entwickler"
   },
   "routes": {
     "home": {
