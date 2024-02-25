@@ -1,6 +1,7 @@
 {
   "metadata": {
-    "title": "{name} - Fullstack Entwickler"
+    "title": "{name} - Fullstack Entwickler",
+    "description": "Portfolioseite von Hisham Görner"
   },
   "routes": {
     "home": {
@@ -51,7 +52,7 @@
   "error": {
     "subtitle": "Fehler",
     "title": "Es ist ein Fehler aufgetreten",
-    "description": "I'm sorry a unexpected error occured. I'm sorry for the inconvience.",
-    "goHome": "Go home"
+    "description": "Es tut mir es ist ein unerwarteter Fehler aufgetreten.",
+    "goHome": "Zur Startseite"
   }
 }

@@ -6,7 +6,7 @@ import font from '@/style/font';
 import pick from 'lodash/pick';
 import { Metadata } from 'next';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
-import Footer from '@/components/footer';
+import { Footer } from '@/components/footer';
 
 interface LocaleLayoutProps {
   params: { locale: string };
@@ -61,7 +61,7 @@ export default function LocaleLayout({ children, params: { locale } }: PropsWith
     <html className="h-full" lang={locale}>
       <body className={clsx(font.variable, 'flex h-full flex-col')}>
         <NextIntlClientProvider locale={locale} messages={pick(messages, 'error')}>
-          <main className="flex-1">{children}</main>
+          <main className="mt-header flex-1">{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

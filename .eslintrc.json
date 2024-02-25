@@ -1,18 +1,24 @@
 {
-  "extends": ["prettier", "next/core-web-vitals", "airbnb", "airbnb-typescript"],
+  "extends": ["prettier", "next/core-web-vitals"],
   "plugins": ["prettier"],
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
-  "rules": {
-    "prettier/prettier": ["error"],
-    "@typescript-eslint/indent": ["off"],
-    "react/require-default-props": ["off"],
-    "max-len": ["off"],
-    "object-curly-newline": ["off"],
-    "react/jsx-props-no-spreading": ["off"],
-    "import/prefer-default-export": ["off"],
-    "react/react-in-jsx-scope": ["off"],
-    "react/jsx-pascal-case": ["off"]
-  }
+  "root": true,
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["airbnb", "airbnb-typescript"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        "prettier/prettier": ["error"],
+        // disable rules which conflict with prettier
+        "@typescript-eslint/indent": ["off"],
+        "max-len": ["off"],
+        "object-curly-newline": ["off"],
+        "no-trailing-spaces": ["off"],
+        // use monorepo like structure
+        "import/prefer-default-export": ["off"]
+      }
+    }
+  ]
 }

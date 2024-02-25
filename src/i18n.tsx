@@ -28,9 +28,7 @@ export default getRequestConfig(async ({ locale }) => {
       },
     },
     getMessageFallback({ key, namespace }) {
-      return `\`getMessageFallback\` called for ${[namespace, key]
-        .filter((part) => part != null)
-        .join('.')}`;
+      return `\`getMessageFallback\` called for ${[namespace, key].filter((part) => part != null).join('.')}`;
     },
   };
 });

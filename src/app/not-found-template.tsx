@@ -25,7 +25,7 @@ export default function NotFoundTemplate({
         width={128}
         height={128}
         alt="Hisham Görner - Ups"
-        className="rounded-full mx-auto shadow-md"
+        className="mx-auto rounded-full shadow-md"
       />
       <header className="mx-auto mt-16 max-w-2xl text-center sm:mt-24">
         <Text intent="text" className="font-semibold leading-8 text-zomp">
@@ -43,8 +43,8 @@ export default function NotFoundTemplate({
         <ul className="-mt-6 divide-y divide-gray-900/5 border-b border-gray-900/5">
           {routes.map((link) => (
             <li key={link.key} className="relative flex gap-x-6 py-6">
-              <div className="flex h-10 w-10 flex-none items-center justify-center rounded-lg shadow-sm ring-1 ring-gray-900/10">
-                <link.icon className="h-6 w-6 text-zomp" aria-hidden="true" />
+              <div className="flex size-10 flex-none items-center justify-center rounded-lg shadow-sm ring-1 ring-gray-900/10">
+                <link.icon className="size-6 text-zomp" aria-hidden="true" />
               </div>
               <div className="flex-auto">
                 <Headline text="secondary" intent="card">
@@ -58,14 +58,14 @@ export default function NotFoundTemplate({
                 </Text>
               </div>
               <div className="flex-none self-center">
-                <Icons.navigation.right className="h-5 w-5 text-charcoal" aria-hidden />
+                <Icons.navigation.right className="size-5 text-charcoal" aria-hidden />
               </div>
             </li>
           ))}
         </ul>
         <footer className="mt-10 flex justify-center">
-          <Link href="/" className="inline-flex items-center gap-x-2 text-sm font-semibold leading-6 text-indigo-600">
-            <Icons.navigation.left className="h5 w-5 font-semibold text-charcoal" aria-hidden />
+          <Link href="/" className="inline-flex items-center gap-x-2 text-sm font-semibold leading-6">
+            <Icons.navigation.left className="size-5 font-semibold text-charcoal" aria-hidden />
             {homeButtonText}
           </Link>
         </footer>

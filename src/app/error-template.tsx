@@ -21,7 +21,7 @@ export default function ErrorTemplate({ subtitle, title, description, goHome }: 
         {description}
       </Text>
       <div className="mt-10">
-        <Text as={Link} href="/" className="font-semibold text-zomp inline-flex">
+        <Text as={Link} href="/" className="inline-flex font-semibold text-zomp">
           {goHome}
         </Text>
       </div>

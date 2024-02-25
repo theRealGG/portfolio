@@ -7,9 +7,9 @@ import { ComponentPropsWithoutRef, ForwardedRef, PropsWithChildren, forwardRef }
 const buttonVariants = cva('rounded font-semibold shadow-sm', {
   variants: {
     intent: {
-      primary: 'text-white bg-zomp-600 hover:bg-zomp focus-visible:outline-zomp-600',
-      secondary: 'text-black bg-seasalt-600 hover:bg-seasalt focus-visible:outline-seasalt-600',
-      ghost: 'bg-white ring-inset ring-1 ring-gray-300 hover:bg-gray-50',
+      primary: 'bg-zomp-600 text-white hover:bg-zomp focus-visible:outline-zomp-600',
+      secondary: 'bg-seasalt-600 text-black hover:bg-seasalt focus-visible:outline-seasalt-600',
+      ghost: 'bg-white ring-1 ring-inset ring-gray-300 hover:bg-gray-50',
     },
     size: {
       xs: 'px-2 py-1 text-xs',
