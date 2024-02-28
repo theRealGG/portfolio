@@ -42,6 +42,10 @@
       "name": "Instagram",
       "description": "My Instagram profile"
     },
+    "facebook": {
+      "name": "Facebook",
+      "description": "My Facebook profile"
+    },
     "github": {
       "name": "Github",
       "description": "My Github profile"
