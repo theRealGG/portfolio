@@ -16,6 +16,10 @@
       "name": "Blog",
       "description": "Schau dir meine neusten Blogeinträge an"
     },
+    "projects": {
+      "name": "Projekte",
+      "description": "Erfahre mehr über Projekte an denen ich gearbeitet habe"
+    },
     "faq": {
       "name": "Faq",
       "description": "Frequently asket question"
