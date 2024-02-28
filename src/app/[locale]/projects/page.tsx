@@ -1,5 +1,11 @@
 import { Container } from '@/components/ui';
+import { unstable_setRequestLocale } from 'next-intl/server';
 
-export function Work() {
+type Props = {
+  params: { locale: string };
+};
+
+export default function Work({ params: { locale } }: Props) {
+  unstable_setRequestLocale(locale);
   return <Container> Projects works</Container>;
 }
