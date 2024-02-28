@@ -50,7 +50,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: `PORT=${PORT} pnpm start`,
+    command: `PORT=${PORT} npm start`,
     port: PORT,
     reuseExistingServer: true,
   },
