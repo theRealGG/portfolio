@@ -34,6 +34,10 @@
       "name": "Linkedin",
       "description": "Mein Linkedin profil"
     },
+    "facebook": {
+      "name": "Facebook",
+      "description": "Mein Facebook profil"
+    },
     "twitter": {
       "name": "Twitter",
       "description": "Mein X (ehemals Twitter) profil"
