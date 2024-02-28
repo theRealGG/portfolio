@@ -24,6 +24,14 @@ export const socialLinks = [
     icon: Icons.social.twitter,
   },
   {
+    key: 'facebook',
+    href: '/',
+    name: 'socialLinks.facebook.name',
+    description: 'socialLinks.facebook.description',
+    icon: Icons.social.facebook,
+  },
+
+  {
     key: 'instagram',
     href: '/',
     name: 'socialLinks.instagram.name',

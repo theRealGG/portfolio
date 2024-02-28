@@ -10,7 +10,7 @@ import {
   HiChevronLeft,
   HiChevronRight,
 } from 'react-icons/hi2';
-import { RiGithubFill, RiInstagramFill, RiLinkedinFill, RiTwitterXFill } from 'react-icons/ri';
+import { RiGithubFill, RiInstagramFill, RiLinkedinFill, RiTwitterXFill, RiFacebookFill } from 'react-icons/ri';
 import { ComponentPropsWithoutRef } from 'react';
 
 export const Icons = {
@@ -26,6 +26,7 @@ export const Icons = {
     linkedin: (props: ComponentPropsWithoutRef<typeof RiLinkedinFill>) => <RiLinkedinFill {...props} />,
     instagram: (props: ComponentPropsWithoutRef<typeof RiInstagramFill>) => <RiInstagramFill {...props} />,
     github: (props: ComponentPropsWithoutRef<typeof RiGithubFill>) => <RiGithubFill {...props} />,
+    facebook: (props: ComponentPropsWithoutRef<typeof RiFacebookFill>) => <RiFacebookFill {...props} />,
   },
   routes: {
     home: (props: ComponentPropsWithoutRef<typeof HiHome>) => <HiHome {...props} />,

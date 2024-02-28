@@ -16,7 +16,7 @@ export function Footer() {
       <nav className="-mb-6 columns-2  sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
         {localizedRoutes.map((item) => (
           <div key={item.key} className={mergeClasses('pb-6')}>
-            <Text as={Link} href={item.href} intent="note" text="primary">
+            <Text as={Link} href={item.href} intent="note" text="secondary">
               {item.name}
             </Text>
           </div>
@@ -30,8 +30,9 @@ export function Footer() {
           </Text>
         ))}
       </div>
-
-      <p className="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2024 Hisham Görner</p>
+      <Text intent="mininote" text="secondary" className="mt-10 text-center">
+        &copy; 2024 Hisham Görner
+      </Text>
     </Container>
   );
 }

@@ -9,6 +9,7 @@ const textVariants = cva('', {
       summary: 'mt-6 text-xl leading-8',
       text: 'text-base leading-7 sm:leading-8',
       note: 'text-sm leading-6',
+      mininote: 'text-xs leading-5',
     },
     text: {
       primary: 'text-black',
