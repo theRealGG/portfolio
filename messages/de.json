@@ -1,6 +1,7 @@
 {
-  "layout": {
-    "title": "Hisham Görner"
+  "metadata": {
+    "title": "{name} - Fullstack Entwickler",
+    "description": "Portfolioseite von Hisham Görner"
   },
   "routes": {
     "home": {
@@ -14,6 +15,10 @@
     "blog": {
       "name": "Blog",
       "description": "Schau dir meine neusten Blogeinträge an"
+    },
+    "projects": {
+      "name": "Projekte",
+      "description": "Erfahre mehr über Projekte an denen ich gearbeitet habe"
     },
     "faq": {
       "name": "Faq",
@@ -49,6 +54,9 @@
     "pages": "Schau dir meine Seiten an"
   },
   "error": {
-    "error": "Error"
+    "subtitle": "Fehler",
+    "title": "Es ist ein Fehler aufgetreten",
+    "description": "Es tut mir es ist ein unerwarteter Fehler aufgetreten.",
+    "goHome": "Zur Startseite"
   }
 }

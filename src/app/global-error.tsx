@@ -8,10 +8,10 @@ export default function GlobalError({ reset }: { reset: () => void }) {
       <body className="h-full">
         <main className="grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8">
           <div className="text-center">
-            <Text intent="text" className="font-semibold text-zomp uppercase">
+            <Text intent="text" className="font-semibold uppercase text-zomp">
               Error
             </Text>
-            <Headline as="h1" intent="primary" className="font-semibold mt-4">
+            <Headline as="h1" intent="primary" className="mt-4 font-semibold">
               A unexpected error occured
             </Headline>
             <Text intent="text" text="secondary" className="mt-6">

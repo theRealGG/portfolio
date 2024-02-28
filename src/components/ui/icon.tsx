@@ -6,6 +6,7 @@ import {
   HiChatBubbleLeft,
   HiChevronUp,
   HiChevronDown,
+  HiComputerDesktop,
   HiChevronLeft,
   HiChevronRight,
 } from 'react-icons/hi2';
@@ -32,5 +33,6 @@ export const Icons = {
     blog: (props: ComponentPropsWithoutRef<typeof HiNewspaper>) => <HiNewspaper {...props} />,
     faq: (props: ComponentPropsWithoutRef<typeof HiQuestionMarkCircle>) => <HiQuestionMarkCircle {...props} />,
     contact: (props: ComponentPropsWithoutRef<typeof HiChatBubbleLeft>) => <HiChatBubbleLeft {...props} />,
+    projects: (props: ComponentPropsWithoutRef<typeof HiComputerDesktop>) => <HiComputerDesktop {...props} />,
   },
 };

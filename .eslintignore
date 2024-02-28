@@ -1,2 +1,4 @@
 */**.js
 */**.mjs
+tailwind.config.ts
+playwright.config.ts

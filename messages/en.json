@@ -1,6 +1,7 @@
 {
-  "layout": {
-    "title": "Hisham Görner"
+  "metadata": {
+    "title": "{name} - Fullstack Developer",
+    "description": "Portfolio page of Hisham Görner"
   },
   "routes": {
     "home": {
@@ -11,6 +12,10 @@
       "name": "About",
       "description": "Detailed information about Hisham Görner"
     },
+    "projects": {
+      "name": "Projects",
+      "description": "Get more informations about projects i currently worked"
+    },
     "blog": {
       "name": "Blog",
       "description": "Get my latest article"
@@ -20,7 +25,7 @@
       "description": "Frequently asket question"
     },
     "contact": {
-      "name": "contact",
+      "name": "Contact",
       "description": "Get in contact with me"
     }
   },

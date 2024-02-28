@@ -1,7 +1,10 @@
-import CompactFooter from '@/components/compact-footer';
+import { CompactFooter } from '@/components/footer';
 import { Icons } from '@/components/ui';
 import { Routes, SocialLinks } from '@/shared/models';
 import NotFoundTemplate from './not-found-template';
+
+// due to a limitation in the build system this export is required
+export const dynamic = 'force-dynamic';
 
 const routes = [
   {

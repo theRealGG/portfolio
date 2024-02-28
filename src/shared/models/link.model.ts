@@ -6,7 +6,7 @@ type Href = LinkProps['href'] | keyof typeof Link;
 
 export interface LinkModel<T extends Href> {
   key: string;
-  name: string; 
+  name: string;
   href: T;
   description: string;
   icon: ElementType;

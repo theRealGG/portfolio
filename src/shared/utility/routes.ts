@@ -17,6 +17,13 @@ export const routes = [
     icon: Icons.routes.about,
   },
   {
+    key: 'projects',
+    href: '/projects',
+    name: 'routes.projects.name',
+    description: 'routes.projects.description',
+    icon: Icons.routes.projects,
+  },
+  {
     key: 'blog',
     href: '/blog',
     name: 'routes.blog.name',
