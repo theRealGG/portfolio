@@ -1,9 +1,6 @@
 {
+  "i18n-ally.localesPaths": ["messages"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "always",
-    "source.organizeImports": "explicit"
-  }
+  "editor.formatOnPaste": false
 }

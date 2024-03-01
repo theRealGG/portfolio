@@ -42,13 +42,16 @@ export function TouchTarget({ children }: { children: React.ReactNode }) {
 export const Button = forwardRef(
   ({ intent, size, className, children, ...props }: PropsWithChildren<ButtonLinks>, ref: ForwardedRef<HTMLElement>) => {
     if ('href' in props) {
+      const { href, ...propsWithoutHref } = props;
       return (
         <Link
           className={mergeClasses(buttonVariants({ intent, size, className }))}
           href={props.href}
+          data-testid="button"
           data-size={size}
           data-intent={intent}
           ref={ref as ForwardedRef<HTMLAnchorElement>}
+          {...propsWithoutHref}
         >
           <TouchTarget>{children}</TouchTarget>
         </Link>
@@ -58,8 +61,10 @@ export const Button = forwardRef(
       <HeadlessButton
         className={mergeClasses(buttonVariants({ intent, size, className }))}
         ref={ref}
+        data-testid="button"
         data-size={size}
         data-intent={intent}
+        {...props}
       >
         <TouchTarget>{children}</TouchTarget>
       </HeadlessButton>
