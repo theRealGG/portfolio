@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Text component should match snapshot 1`] = `
+<body>
+  <div>
+    <p
+      class="text-base leading-7 sm:leading-8 text-black"
+      data-testid="text"
+    />
+  </div>
+</body>
+`;

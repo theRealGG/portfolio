@@ -2,3 +2,5 @@
 */**.mjs
 tailwind.config.ts
 playwright.config.ts
+jest.d.ts
+global.d.ts

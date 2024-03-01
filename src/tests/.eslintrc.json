@@ -1,0 +1,9 @@
+{
+  "extends": ["../.eslintrc.json", "plugin:jest/recommended", "plugin:jest/style"],
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+  }
+}
