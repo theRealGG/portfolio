@@ -1,5 +1,5 @@
 import { Routes } from '@/shared/models';
-import { Icons } from '@/ui/icon';
+import { Icons } from '@/components/ui/icon';
 
 export const routes = [
   {

@@ -3,7 +3,7 @@ on:
   push:
   pull_request:
 jobs:
-  test:
+  default:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -16,6 +16,8 @@ jobs:
       - name: Lint Typescript
         run: npm run lint
       - name: Lint CSS
-        run: npm run lint:css  
+        run: npm run lint:css
+      - name: Test
+        run: npm test
       - name: Build application
         run: npm run build

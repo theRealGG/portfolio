@@ -37,6 +37,7 @@ export function Text<T extends ElementType = 'p'>({
   return (
     <Component
       className={mergeClasses(textVariants({ intent, text, className }))}
+      data-testid="text"
       data-intent={intent}
       data-text={text}
       {...props}

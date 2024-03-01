@@ -40,6 +40,7 @@ export function Headline<T extends ElementType = 'h3'>({
       className={mergeClasses(headlineVariants({ intent, text }))}
       data-intent={intent}
       data-text={text}
+      data-testid="headline"
       {...props}
     >
       {children}
