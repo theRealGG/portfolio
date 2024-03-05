@@ -1,7 +1,7 @@
-import { mergeClasses, routes, socialLinks } from '@/shared/utility';
-import { Link } from '@/navigation';
-import { useTranslations } from 'next-intl';
 import { Container, Text } from '@/components/ui';
+import { Link } from '@/navigation';
+import { mergeClasses, routes, socialLinks } from '@/shared/utility';
+import { useTranslations } from 'next-intl';
 
 export function Footer() {
   const t = useTranslations();
@@ -12,7 +12,7 @@ export function Footer() {
     description: t(r.description as any),
   }));
   return (
-    <Container className="overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+    <Container className="px-6 py-20 sm:py-24 lg:px-8">
       <nav className="-mb-6 columns-2  sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
         {localizedRoutes.map((item) => (
           <div key={item.key} className={mergeClasses('pb-6')}>

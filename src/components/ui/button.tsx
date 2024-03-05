@@ -1,8 +1,8 @@
 import { Link } from '@/navigation';
 import { mergeClasses } from '@/shared/utility';
-import { Button as HeadlessButton, ButtonProps as HeadlessButtonProps } from '@headlessui/react';
+import { Button as HeadlessButton } from '@headlessui/react';
 import { cva, type VariantProps } from 'class-variance-authority';
-import { ComponentPropsWithoutRef, ForwardedRef, PropsWithChildren, forwardRef } from 'react';
+import { ComponentPropsWithoutRef, ForwardedRef, forwardRef, PropsWithChildren } from 'react';
 
 const buttonVariants = cva('rounded font-semibold shadow-sm', {
   variants: {
@@ -25,7 +25,8 @@ const buttonVariants = cva('rounded font-semibold shadow-sm', {
   },
 });
 
-type ButtonLinks = VariantProps<typeof buttonVariants> & (HeadlessButtonProps | ComponentPropsWithoutRef<typeof Link>);
+type ButtonLinks = VariantProps<typeof buttonVariants> &
+  (ComponentPropsWithoutRef<'button'> | ComponentPropsWithoutRef<typeof Link>);
 
 export function TouchTarget({ children }: { children: React.ReactNode }) {
   return (
@@ -53,7 +54,7 @@ export const Button = forwardRef(
           ref={ref as ForwardedRef<HTMLAnchorElement>}
           {...propsWithoutHref}
         >
-          <TouchTarget>{children}</TouchTarget>
+          {children}
         </Link>
       );
     }
@@ -64,9 +65,10 @@ export const Button = forwardRef(
         data-testid="button"
         data-size={size}
         data-intent={intent}
+        disabled={props.disabled}
         {...props}
       >
-        <TouchTarget>{children}</TouchTarget>
+        {children}
       </HeadlessButton>
     );
   },

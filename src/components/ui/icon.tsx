@@ -1,22 +1,28 @@
+import { ComponentPropsWithoutRef } from 'react';
 import {
-  HiHome,
+  HiBars3,
   HiBriefcase,
-  HiNewspaper,
-  HiQuestionMarkCircle,
   HiChatBubbleLeft,
-  HiChevronUp,
   HiChevronDown,
-  HiComputerDesktop,
   HiChevronLeft,
   HiChevronRight,
+  HiChevronUp,
+  HiComputerDesktop,
+  HiHome,
+  HiNewspaper,
+  HiQuestionMarkCircle,
+  HiXMark,
 } from 'react-icons/hi2';
-import { RiGithubFill, RiInstagramFill, RiLinkedinFill, RiTwitterXFill, RiFacebookFill } from 'react-icons/ri';
-import { ComponentPropsWithoutRef } from 'react';
+import { RiFacebookFill, RiGithubFill, RiInstagramFill, RiLinkedinFill, RiTwitterXFill } from 'react-icons/ri';
 
 export const Icons = {
+  action: {
+    burger: (props: ComponentPropsWithoutRef<typeof HiChevronRight>) => <HiBars3 {...props} />,
+    close: (props: ComponentPropsWithoutRef<typeof HiXMark>) => <HiXMark {...props} />,
+  },
   navigation: {
     right: (props: ComponentPropsWithoutRef<typeof HiChevronRight>) => <HiChevronRight {...props} />,
-
+    burger: (props: ComponentPropsWithoutRef<typeof HiChevronRight>) => <HiBars3 {...props} />,
     left: (props: ComponentPropsWithoutRef<typeof HiChevronLeft>) => <HiChevronLeft {...props} />,
     up: ({ className, ...props }: ComponentPropsWithoutRef<typeof HiChevronUp>) => <HiChevronUp {...props} />,
     down: (props: ComponentPropsWithoutRef<typeof HiChevronDown>) => <HiChevronDown {...props} />,
