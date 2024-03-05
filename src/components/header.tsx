@@ -1,0 +1,39 @@
+import { Link } from '@/navigation';
+import { routes } from '@/shared/utility';
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import { LanguageSwitch } from './language-switcher';
+import { Navbar, VerticalNavbar } from './navbar';
+import { Container } from './ui';
+
+export default function Header() {
+  const t = useTranslations();
+  const localizedRoutes = routes.map((route) => ({
+    ...route,
+    name: t(route.name as any),
+    description: t(route.description as any),
+  }));
+  return (
+    <header className="fixed left-0 top-0  z-10  w-full bg-seasalt">
+      <Container className="px-4 sm:px-6 lg:px-8">
+        <div className="relative flex h-16 justify-between">
+          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div className="flex">
+              <Link href="/">
+                <span className="sr-only">Description</span>
+                <Image src="/hisham.png" alt="Hisham Logo" width={48} height={48} className="rounded-full shadow-sm" />
+              </Link>
+            </div>
+          </div>
+          <div className="hidden md:block">
+            <Navbar routes={localizedRoutes} className="mr-6 h-full space-x-8 md:flex" />
+          </div>
+          <div className="flex items-center">
+            <LanguageSwitch />
+            <VerticalNavbar routes={localizedRoutes} className="md:hidden" />
+          </div>
+        </div>
+      </Container>
+    </header>
+  );
+}

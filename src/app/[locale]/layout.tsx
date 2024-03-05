@@ -1,12 +1,13 @@
-import clsx from 'clsx';
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import { PropsWithChildren } from 'react';
+import { Footer } from '@/components/footer';
+import Header from '@/components/header';
 import { locales } from '@/config';
 import font from '@/style/font';
+import clsx from 'clsx';
 import pick from 'lodash/pick';
 import { Metadata } from 'next';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
-import { Footer } from '@/components/footer';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { PropsWithChildren } from 'react';
 
 interface LocaleLayoutProps {
   params: { locale: string };
@@ -61,6 +62,7 @@ export default function LocaleLayout({ children, params: { locale } }: PropsWith
     <html className="h-full" lang={locale}>
       <body className={clsx(font.variable, 'flex h-full flex-col')}>
         <NextIntlClientProvider locale={locale} messages={pick(messages, 'error')}>
+          <Header />
           <main className="mt-header flex-1">{children}</main>
           <Footer />
         </NextIntlClientProvider>

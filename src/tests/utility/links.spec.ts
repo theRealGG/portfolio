@@ -17,6 +17,7 @@ describe('Test social links', () => {
       const names = socialLinks.map((s) => s.name);
       names.forEach((k) => expect(k).toBeDefined());
     });
+
     it('should have valid links', () => {
       socialLinks.forEach((l) => expect(l.href).toBeUrl());
     });
