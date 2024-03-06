@@ -1,10 +1,10 @@
-import { Routes } from '@/shared/models';
 import { mergeClasses } from '@/shared/utility';
-import { ComponentPropsWithoutRef } from 'react';
-import { NavbarLink } from './link';
+import pick from 'lodash/pick';
+import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { NavbarLink, VerticalNavbarLink } from './link';
+import { NavbarProps } from './navbar.props';
 import SlideOver from './slide-over';
-
-type NavbarProps = { routes: Routes } & ComponentPropsWithoutRef<'nav'>;
+import { SlideOverProvider } from './slide-over-provider';
 
 export function Navbar({ routes, className, children, ...props }: NavbarProps) {
   return (
@@ -19,17 +19,22 @@ export function Navbar({ routes, className, children, ...props }: NavbarProps) {
   );
 }
 
-export function VerticalNavbar({ routes, className, children, ...props }: NavbarProps) {
+export function MobileNavbar({ routes, children, className, ...props }: NavbarProps) {
+  const messages = useMessages();
   return (
-    <SlideOver>
-      <ul className="flex flex-col gap-y-8 ">
-        {routes.map((route) => (
-          <NavbarLink className="inline-flex items-center gap-x-2 p-4 text-lg" key={route.key} href={route.href}>
-            <route.icon className="size-6" />
-            {route.name}
-          </NavbarLink>
-        ))}
-      </ul>
-    </SlideOver>
+    <NextIntlClientProvider messages={pick(messages, 'header')}>
+      <SlideOverProvider>
+        <SlideOver {...props}>
+          <nav className={mergeClasses(className, 'flex flex-col justify-center gap-y-8')} {...props}>
+            {routes.map((route) => (
+              <VerticalNavbarLink key={route.key} href={route.href}>
+                <route.icon className="size-6" />
+                {route.name}
+              </VerticalNavbarLink>
+            ))}
+          </nav>
+        </SlideOver>
+      </SlideOverProvider>
+    </NextIntlClientProvider>
   );
 }

@@ -62,5 +62,10 @@
     "title": "Es ist ein Fehler aufgetreten",
     "description": "Es tut mir es ist ein unerwarteter Fehler aufgetreten.",
     "goHome": "Zur Startseite"
+  },
+  "header": {
+    "logo": "Zur Startseite",
+    "open": "Öffne Navigationsmenü",
+    "close": "Schließe Navigationsmenü"
   }
 }

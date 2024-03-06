@@ -62,5 +62,10 @@
     "title": "A error occured",
     "description": "I'm sorry a unexpected error occured. I'm sorry for the inconvience.",
     "goHome": "Go home"
+  },
+  "header": {
+    "logo": "Go to homepage",
+    "open": "Open navigationmenu",
+    "close": "Close navigationmenu"
   }
 }
