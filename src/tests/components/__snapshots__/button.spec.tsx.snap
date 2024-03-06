@@ -8,12 +8,7 @@ exports[`Button should match snapshot 1`] = `
       data-headlessui-state=""
       data-testid="button"
       type="button"
-    >
-      <span
-        aria-hidden="true"
-        class="absolute left-1/2 top-1/2 size-[max(100%,2.75rem)] -translate-x-1/2 -translate-y-1/2 [@media(pointer:fine)]:hidden"
-      />
-    </button>
+    />
   </div>
 </body>
 `;
