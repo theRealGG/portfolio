@@ -23,6 +23,7 @@
       "@/components/*": ["./src/components/*"],
       "@/shared/*": ["./src/shared/*"],
       "@/models/*": ["./src/shared/models/*"],
+      "@/core/*": ["./src/components/core/*"],
       "@/ui/*": ["./src/components/ui/*"],
       "@/hooks/*": ["./src/shared/hooks/*"],
       "@/utility/*": ["./src/shared/utility/*"]

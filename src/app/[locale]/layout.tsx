@@ -1,5 +1,4 @@
-import { Footer } from '@/components/footer';
-import Header from '@/components/header';
+import { Footer, Header } from '@/components/core';
 import { locales } from '@/config';
 import font from '@/style/font';
 import clsx from 'clsx';

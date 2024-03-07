@@ -13,6 +13,7 @@ const config: Config = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
     '^@/ui/(.*)$': '<rootDir>/src/components/ui/$1',
+    '^@/core/(.*)$': '<rootDir>/src/components/core/$1',
     '^@/components/(.*)$': '<rootDir>/src/components/$1',
     '^@/shared/(.*)$': '<rootDir>/src/shared/$1',
     '^@/hooks/(.*)$': '<rootDir>/src/shared/hooks/$1',

@@ -1,4 +1,4 @@
-import { CompactFooter } from '@/components/footer';
+import { CompactFooter } from '@/components/core/footer';
 import { Icons } from '@/components/ui';
 import { Routes, SocialLinks } from '@/shared/models';
 import NotFoundTemplate from './not-found-template';

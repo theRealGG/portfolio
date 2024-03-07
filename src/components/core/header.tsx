@@ -2,11 +2,11 @@ import { Link } from '@/navigation';
 import { routes } from '@/shared/utility';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { Container } from '../ui';
 import { LanguageSwitch } from './language-switcher';
 import { MobileNavbar, Navbar } from './navbar';
-import { Container } from './ui';
 
-export default function Header() {
+export function Header() {
   const t = useTranslations();
   const localizedRoutes = routes.map((route) => ({
     ...route,
@@ -20,7 +20,7 @@ export default function Header() {
           <div className="flex  flex-1 items-center justify-start sm:items-stretch lg:justify-center">
             <div className="flex items-center justify-center">
               <Link href="/">
-                <span className="sr-only">Description</span>
+                <span className="sr-only">{t('header.logo')}</span>
                 <Image src="/hisham.png" alt="Hisham Logo" width={48} height={48} className="rounded-full shadow-sm" />
               </Link>
             </div>

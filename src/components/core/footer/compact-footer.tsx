@@ -1,5 +1,5 @@
 import { SocialLinks } from '@/shared/models';
-import { Container, Text } from '../ui';
+import { Container, Text } from '../../ui';
 
 export function CompactFooter({ links }: { links: SocialLinks }) {
   return (
