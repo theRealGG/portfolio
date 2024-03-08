@@ -1,5 +1,5 @@
 import { Link } from '@/navigation';
-import { routes } from '@/shared/utility';
+import { useLocalizedRoutes } from '@/shared/hooks';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { Container } from '../ui';
@@ -8,11 +8,7 @@ import { MobileNavbar, Navbar } from './navbar';
 
 export function Header() {
   const t = useTranslations();
-  const localizedRoutes = routes.map((route) => ({
-    ...route,
-    name: t(route.name as any),
-    description: t(route.description as any),
-  }));
+  const localizedRoutes = useLocalizedRoutes();
   return (
     <header className="fixed left-0 top-0  z-10  w-full bg-seasalt">
       <Container className="px-4 sm:px-6 lg:px-8">

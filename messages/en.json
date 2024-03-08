@@ -66,6 +66,20 @@
   "header": {
     "logo": "Go to homepage",
     "open": "Open navigationmenu",
-    "close": "Close navigationmenu"
+    "close": "Close navigationmenu",
+    "navbar": {
+      "primary": "Primary navigation",
+      "secondary": "Primary navigation for mobile layout"
+    }
+  },
+  "footer": {
+    "navbar": {
+      "routes": "Footer navigation"
+    }
+  },
+  "language": {
+    "de": "German",
+    "en": "English",
+    "switch": "Change language to: {lang}"
   }
 }

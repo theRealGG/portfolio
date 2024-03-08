@@ -1,19 +1,16 @@
 import { Container, Text } from '@/components/ui';
 import { Link } from '@/navigation';
-import { mergeClasses, routes, socialLinks } from '@/shared/utility';
+import { useLocalizedLinks, useLocalizedRoutes } from '@/shared/hooks';
+import { mergeClasses } from '@/shared/utility';
 import { useTranslations } from 'next-intl';
 
 export function Footer() {
-  const t = useTranslations();
-  const localizedRoutes = routes.map((r) => ({ ...r, name: t(r.name as any), description: t(r.description as any) }));
-  const localizedSocial = socialLinks.map((r) => ({
-    ...r,
-    name: t(r.name as any),
-    description: t(r.description as any),
-  }));
+  const t = useTranslations('footer');
+  const localizedRoutes = useLocalizedRoutes();
+  const localizedSocial = useLocalizedLinks();
   return (
     <Container className="px-6 py-20 sm:py-24 lg:px-8">
-      <nav className="-mb-6 columns-2  sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+      <nav className="-mb-6 columns-2  sm:flex sm:justify-center sm:space-x-12" aria-label={t('navbar.routes')}>
         {localizedRoutes.map((item) => (
           <div key={item.key} className={mergeClasses('pb-6')}>
             <Text as={Link} href={item.href} intent="note" text="secondary">

@@ -66,6 +66,15 @@
   "header": {
     "logo": "Zur Startseite",
     "open": "Öffne Navigationsmenü",
-    "close": "Schließe Navigationsmenü"
+    "close": "Schließe Navigationsmenü",
+    "navbar": {
+      "primary": "Primäre Navigation",
+      "secondary": "Primäre Navigation für mobiles Layout"
+    }
+  },
+  "language": {
+    "de": "Deutsch",
+    "en": "Englisch",
+    "switch": "Wechsel die Sprache zu: {lang}"
   }
 }
