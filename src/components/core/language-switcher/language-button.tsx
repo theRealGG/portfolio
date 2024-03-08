@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 
 import { mergeClasses } from '@/shared/utility';
 import { ComponentProps, useTransition } from 'react';
-import { Button } from '../ui';
+import { Button } from '../../ui';
 
 export function LanguageButton({ className, children, locale }: { locale: string } & ComponentProps<typeof Button>) {
   const [isPending, startTransition] = useTransition();

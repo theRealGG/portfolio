@@ -2,10 +2,10 @@
 
 import { AppPathnames } from '@/config';
 import { Link } from '@/navigation';
+import { useIsActiveLink } from '@/shared/hooks';
 import { mergeClasses } from '@/shared/utility';
-import { useSelectedLayoutSegment } from 'next/navigation';
 import { ComponentProps } from 'react';
-import { useSlideOverContext } from './slide-over.provider';
+import { useSlideOverContext } from '../slide-over';
 
 export function NavbarLink<Pathname extends AppPathnames>({
   href,
@@ -13,12 +13,9 @@ export function NavbarLink<Pathname extends AppPathnames>({
   children,
   ...rest
 }: ComponentProps<typeof Link<Pathname>>) {
-  const selectedLayoutSegment = useSelectedLayoutSegment();
-  const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
-  const isActive = pathname === href;
+  const isActive = useIsActiveLink(href);
   return (
     <Link
-      aria-current={isActive ? 'page' : undefined}
       className={mergeClasses(
         isActive
           ? 'border-zomp text-black'
@@ -34,16 +31,14 @@ export function NavbarLink<Pathname extends AppPathnames>({
   );
 }
 
-export function VerticalNavbarLink<Pathname extends AppPathnames>({
+export function MobileNavbarLink<Pathname extends AppPathnames>({
   href,
   className,
   children,
   ...rest
 }: ComponentProps<typeof Link<Pathname>>) {
   const { setOpen } = useSlideOverContext();
-  const selectedLayoutSegment = useSelectedLayoutSegment();
-  const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
-  const isActive = pathname === href;
+  const isActive = useIsActiveLink(href);
   return (
     <Link
       aria-current={isActive ? 'page' : undefined}
