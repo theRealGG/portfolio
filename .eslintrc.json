@@ -1,3 +1,31 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx", "*/.js"],
+      "extends": ["plugin:tailwindcss/recommended"],
+      "parser": "@typescript-eslint/parser"
+    },
+    {
+      "files": ["**/*.js", "**/*.jsx"],
+      "extends": ["airbnb", "airbnb/hooks"],
+      "rules": {
+        "react/react-in-jsx-scope": ["off"]
+      }
+    },
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "extends": ["airbnb", "airbnb-typescript", "airbnb/hooks"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        "react/react-in-jsx-scope": ["off"]
+      }
+    }
+  ]
 }

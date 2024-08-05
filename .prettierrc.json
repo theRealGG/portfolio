@@ -1,0 +1,19 @@
+{
+  "singleQuote": false,
+  "printWidth": 120,
+  "overrides": [
+    {
+      "files": ["**/*.md"],
+      "options": {
+        "printWidth": 80,
+        "proseWrap": "always"
+      }
+    },
+    {
+      "files": ["**/*.ts", "**/*.js", "**/*.jsx", "**/*.tsx"],
+      "options": {
+        "plugins": ["prettier-plugin-tailwindcss"]
+      }
+    }
+  ]
+}
