@@ -1,0 +1,12 @@
+@tailwind base;
+
+@layer base {
+  html,
+  body {
+    @apply h-full antialiased;
+  }
+
+  body {
+    @apply text-black bg-white;
+  }
+}
