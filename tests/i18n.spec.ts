@@ -11,15 +11,15 @@ test.describe('Test internationalization', () => {
   });
   test('should set a cookie', async ({ page }) => {
     function localeCookies(cookies: Array<Cookie>) {
-      return cookies.find((cookie) => cookie.name === 'locale');
+      return cookies.find((cookie) => cookie.name === 'NEXT_LOCALE');
     }
 
     await page.goto('/en');
     const localeCookie = localeCookies(await page.context().cookies());
 
     expect(localeCookie?.path).toBe('/');
-    expect(localeCookie?.sameSite).toBe('Strict');
-    expect(localeCookie?.httpOnly).toBeTruthy();
+    expect(localeCookie?.sameSite).toBe('Lax');
+    expect(localeCookie?.httpOnly).toBeFalsy();
     expect(localeCookie?.secure).toBeFalsy();
     expect(localeCookie?.value).toBe('en');
 
