@@ -52,7 +52,7 @@ jobs:
         run: pnpm run test:unit
 
       - name: Install additional dependencies
-        run: pnpm exec playwright install
+        run: pnpm exec playwright install && pnpm run build
 
       - name: Run integrations tests
         run: pnpm run test:integration
