@@ -1,5 +1,11 @@
 # Portfolio
 
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
 ## Content
 
 - [Description](#description)
@@ -40,16 +46,15 @@ $ git clone https://github.com/theRealGG/portfolio
 
 ### 2) Install the dependencies
 
-``
+```bash
 $ pnpm install
-
-````
+```
 
 ### 3) Verify everything worked by starting the app in the dev mode
 
 ```bash
 $ pnpm run dev
-````
+```
 
 You should get a notification on the terminal that the app is ready to be served
 on port 3000 on localhost
