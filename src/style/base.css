@@ -1,0 +1,41 @@
+@tailwind base;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body,
+  button,
+  input,
+  textarea {
+    @apply text-xs lg:text-md;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-semibold text-raisin-black dark:text-anti-flash-white;
+  }
+
+  h1 {
+    @apply text-xl lg:text-3xl;
+  }
+
+  h2 {
+    @apply text-lg lg:text-xl;
+  }
+
+  h3 {
+    @apply text-sm lg:text-xl;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button {
+    @apply cursor-pointer border-none outline-none;
+  }
+}
