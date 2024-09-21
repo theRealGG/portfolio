@@ -53,6 +53,7 @@ jobs:
 
       - name: Install playwright
         run: pnpm playwright install-deps
+
       - name: Install additional dependencies
         run: pnpm exec playwright install && pnpm run build
 
