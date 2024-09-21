@@ -10,7 +10,7 @@
     "lint": "next lint && stylelint '**/*.css'",
     "test:integration": "playwright test",
     "prepare": "husky",
-    "test": "jest"
+    "test:unit": "jest"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
