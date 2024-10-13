@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 import { PropsWithChildren } from 'react';
 import { Provider } from '@/components';
@@ -20,13 +19,7 @@ export default async function LocaleLayout({
 
   return (
     <html className="h-full" lang={locale}>
-      <body
-        className={clsx(
-          poppins.className,
-          'bg-white dark:bg-rich-black',
-          'text-davys-gray dark:text-french-gray',
-        )}
-      >
+      <body className={poppins.className}>
         <Provider messages={messages}>{children}</Provider>
       </body>
     </html>
